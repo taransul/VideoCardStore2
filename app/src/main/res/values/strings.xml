@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Модели видеокарт</string>
+    <string name="hintEditText">Модель видеокарты</string>
+</resources>
