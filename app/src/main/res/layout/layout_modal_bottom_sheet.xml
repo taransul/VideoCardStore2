@@ -6,7 +6,7 @@
     android:layout_height="wrap_content">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerModel"
+        android:id="@+id/recyclerViewModel"
         android:layout_width="392dp"
         android:layout_height="445dp"
         android:layout_marginStart="8dp"

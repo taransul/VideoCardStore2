@@ -1,5 +1,5 @@
 package com.example.videocardstore2
 
-data class Model(
+data class VideoCardModelData(
     val model: String
 )

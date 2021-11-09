@@ -5,9 +5,9 @@ import androidx.recyclerview.widget.RecyclerView
 
 class ModelAdapter : RecyclerView.Adapter<ModelViewHolder>() {
 
-    private var items: List<Model> = mutableListOf()
+    private var items: List<VideoCardModelData> = mutableListOf()
 
-    private var itemClickListener: ((Model) -> Unit)? = null
+    private var itemClickListener: ((VideoCardModelData) -> Unit)? = null
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ModelViewHolder {
         val viewHolder = ModelViewHolder.from(parent)
@@ -26,12 +26,12 @@ class ModelAdapter : RecyclerView.Adapter<ModelViewHolder>() {
         return items.size
     }
 
-    fun submitList(data: List<Model>) {
+    fun submitList(data: List<VideoCardModelData>) {
         items = data
         notifyDataSetChanged()
     }
 
-    fun setOnItemClickListener(listener: (Model) -> Unit) {
+    fun setOnItemClickListener(listener: (VideoCardModelData) -> Unit) {
         itemClickListener = listener
     }
 }

@@ -21,9 +21,9 @@ class ModelViewHolder private constructor(itemView: View) : RecyclerView.ViewHol
 
     private val modelTextView: TextView by lazy { itemView.title }
 
-    private var itemClickListener: ((Model) -> Unit)? = null
+    private var itemClickListener: ((VideoCardModelData) -> Unit)? = null
 
-    fun bindView(item: Model) {
+    fun bindView(item: VideoCardModelData) {
         modelTextView.text = item.model
 
         itemView.setOnClickListener {
@@ -31,7 +31,7 @@ class ModelViewHolder private constructor(itemView: View) : RecyclerView.ViewHol
         }
     }
 
-    fun setItemClickListener(listener: ((Model) -> Unit)) {
+    fun setItemClickListener(listener: ((VideoCardModelData) -> Unit)) {
         itemClickListener = listener
     }
 }
